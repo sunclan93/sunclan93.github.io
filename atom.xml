@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-19T22:26:17.016Z</updated>
+  <updated>2018-07-19T23:04:22.844Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Life in Lincolnshire</title>
-    <link href="http://yoursite.com/2018/07/19/Life-in-Lincolnshire/"/>
-    <id>http://yoursite.com/2018/07/19/Life-in-Lincolnshire/</id>
-    <published>2018-07-19T21:15:41.000Z</published>
-    <updated>2018-07-19T22:26:17.016Z</updated>
+    <title>life in here</title>
+    <link href="http://yoursite.com/2018/07/19/life-in-here/"/>
+    <id>http://yoursite.com/2018/07/19/life-in-here/</id>
+    <published>2018-07-19T22:03:11.000Z</published>
+    <updated>2018-07-19T23:04:22.844Z</updated>
     
     <summary type="html">
     
@@ -29,16 +29,18 @@
       
         
         
-          &lt;p&gt;&lt;img src=&quot;../images/konachi.jpg&quot;
+          &lt;p&gt;&lt;img src=&quot;/images/konachi.jpg&quot;
         
       
     
     </summary>
     
-      <category term="American Life" scheme="http://yoursite.com/categories/American-Life/"/>
+      <category term="life" scheme="http://yoursite.com/categories/life/"/>
     
     
-      <category term="Daily life" scheme="http://yoursite.com/tags/Daily-life/"/>
+      <category term="life" scheme="http://yoursite.com/tags/life/"/>
+    
+      <category term="American Life" scheme="http://yoursite.com/tags/American-Life/"/>
     
   </entry>
   

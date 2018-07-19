@@ -3,21 +3,23 @@
   
     
     <entry>
-      <title>Life in Lincolnshire</title>
-      <link href="/2018/07/19/Life-in-Lincolnshire/"/>
-      <url>/2018/07/19/Life-in-Lincolnshire/</url>
-      <content type="html"><![CDATA[<p><img src="../images/konachi.jpg" alt="我是图片"></p>]]></content>
+      <title>life in here</title>
+      <link href="/2018/07/19/life-in-here/"/>
+      <url>/2018/07/19/life-in-here/</url>
+      <content type="html"><![CDATA[<p><img src="/images/konachi.jpg" alt="我是图片"></p>]]></content>
       
       <categories>
           
-          <category> American Life </category>
+          <category> life </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Daily life </tag>
+            <tag> life </tag>
+            
+            <tag> American Life </tag>
             
         </tags>
       

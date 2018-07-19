@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>晋西北程序员</title>
+  
+  <subtitle>山西的小米养人啊</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-07-19T22:26:17.016Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Tim</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Life in Lincolnshire</title>
+    <link href="http://yoursite.com/2018/07/19/Life-in-Lincolnshire/"/>
+    <id>http://yoursite.com/2018/07/19/Life-in-Lincolnshire/</id>
+    <published>2018-07-19T21:15:41.000Z</published>
+    <updated>2018-07-19T22:26:17.016Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;../images/konachi.jpg&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="American Life" scheme="http://yoursite.com/categories/American-Life/"/>
+    
+    
+      <category term="Daily life" scheme="http://yoursite.com/tags/Daily-life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/07/19/hello-world/"/>
+    <id>http://yoursite.com/2018/07/19/hello-world/</id>
+    <published>2018-07-19T20:40:30.519Z</published>
+    <updated>2018-07-19T20:40:30.519Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>今天吃什么</title>
+    <link href="http://yoursite.com/2018/07/19/%E4%BB%8A%E5%A4%A9%E5%90%83%E4%BB%80%E4%B9%88/"/>
+    <id>http://yoursite.com/2018/07/19/今天吃什么/</id>
+    <published>2018-07-19T19:56:19.000Z</published>
+    <updated>2018-07-19T22:04:36.797Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;hexo generate&lt;br&gt;hexo
+        
+      
+    
+    </summary>
+    
+      <category term="京酱肉丝" scheme="http://yoursite.com/categories/%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D/"/>
+    
+    
+      <category term="吃的" scheme="http://yoursite.com/tags/%E5%90%83%E7%9A%84/"/>
+    
+      <category term="喝的" scheme="http://yoursite.com/tags/%E5%96%9D%E7%9A%84/"/>
+    
+  </entry>
+  
+</feed>

@@ -46,6 +46,9 @@
     <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
     
     
+<link rel="stylesheet" type="text/css" href="/css/page.css">
+<link rel="stylesheet" type="text/css" href="/css/post.css">
+
     <link rel="stylesheet" type="text/css" href="/css/custom.css">
     <link rel="stylesheet" type="text/css" href="/css/atom-one-dark.css">
     <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
@@ -77,7 +80,7 @@
     <script defer type="text/javascript" src="/js/index.js"></script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>晋西北程序员 - 山西的小米养人啊</title>
+    <title>sql 操作 | 晋西北程序员 - 山西的小米养人啊</title>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
     
@@ -95,7 +98,7 @@
   <a id="nav-toggle" class="nav-toggle"><i class="fas fa-bars"></i></a>
   <ul id="menu">
     
-    <li><a href="/" class="current">首页</a></li>
+    <li><a href="/">首页</a></li>
     
     <li><a href="/archives/">归档</a></li>
     
@@ -118,25 +121,22 @@
         <div class="main-container">
           <div class="content">
             
-
-<div id="index" class="index">
+<div id="post" class="post">
   
-  <article class="index-article card animate" itemscope itemtype="http://schema.org/Article">
+  <article class="post-article card animate" itemscope itemtype="http://schema.org/Article">
     <div class="post-block">
       <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/30/sql-操作/">
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="Tim">
-        <meta itemprop="description" content="">
-        <meta itemprop="image" content="/images/myavatar.jpg">
+       <meta itemprop="name" content="Tim">
+       <meta itemprop="description" content="">
+       <meta itemprop="image" content="/images/myavatar.jpg">
       </span>
       <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="晋西北程序员">
+       <meta itemprop="name" content="晋西北程序员">
       </span>
     </div>
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/2018/07/30/sql-操作/" itemprop="url">sql 操作</a>
-      </h1>
+      <h1 class="post-title" itemprop="name headline">sql 操作</h1>
       <div class="post-meta">
         
         <span class="post-date">
@@ -156,7 +156,6 @@
       </div>
     </header>
     <main class="post-main" itemprop="articleBody">
-      
       <h2 id="设置一个值为auto-increment"><a href="#设置一个值为auto-increment" class="headerlink" title="设置一个值为auto-increment"></a>设置一个值为auto-increment</h2><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">change</span> <span class="hljs-keyword">id</span> <span class="hljs-keyword">id</span> <span class="hljs-built_in">int</span> primary <span class="hljs-keyword">key</span> auto_increment;<br></code></pre></td></tr></table></figure>
 <p>如果id已经是主键了，不写primary key。</p>
 <h2 id="取消auto-increment"><a href="#取消auto-increment" class="headerlink" title="取消auto-increment"></a>取消auto-increment</h2><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">change</span> <span class="hljs-keyword">id</span> <span class="hljs-keyword">id</span> <span class="hljs-built_in">int</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span><br></code></pre></td></tr></table></figure>
@@ -165,7 +164,6 @@
 <h2 id="添加fk"><a href="#添加fk" class="headerlink" title="添加fk"></a>添加fk</h2><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">add</span> <span class="hljs-keyword">constraint</span> fk_name foreign <span class="hljs-keyword">key</span>(___) <span class="hljs-keyword">references</span> tbl2(<span class="hljs-keyword">id</span>)<br></code></pre></td></tr></table></figure>
 <h2 id="删除fk"><a href="#删除fk" class="headerlink" title="删除fk"></a>删除fk</h2><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">drop</span> foreign <span class="hljs-keyword">key</span> fk_name<br></code></pre></td></tr></table></figure>
 
-      
     </main>
     <footer class="post-footer">
       
@@ -181,163 +179,17 @@
     </footer>
   </article>
   
-  <article class="index-article card animate" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/19/life-in-here/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="Tim">
-        <meta itemprop="description" content="">
-        <meta itemprop="image" content="/images/myavatar.jpg">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="晋西北程序员">
-      </span>
-    </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/2018/07/19/life-in-here/" itemprop="url">life in here</a>
-      </h1>
-      <div class="post-meta">
-        
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-07-19T18:03:11-04:00">2018-07-19 18:03:11</time></span>
-        </span>
-        
-        
-        
-        <span class="post-meta-divider divider">|</span>
-        
-        <span class="post-categories">
-          
-          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/life/" itemprop="url" rel="index"><span itemprop="name">life</span></a></span>
-        </span>
-        
-        
-      </div>
-    </header>
-    <main class="post-main" itemprop="articleBody">
-      
-      <p><img src="/images/konachi.jpg" alt="我是图片"></p>
-
-      
-    </main>
-    <footer class="post-footer">
-      
-      <div class="post-tags">
-        
-        
-        
-        
-        <a class="post-tag button" href="/tags/life/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>life</a>
-        
-        <a class="post-tag button" href="/tags/American-Life/" style="background: #a3bb54;" rel="tag"><i class="fas fa-tags"></i>American Life</a>
-        
-      </div>
-      
-    </footer>
-  </article>
   
-  <article class="index-article card animate" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/19/hello-world/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="Tim">
-        <meta itemprop="description" content="">
-        <meta itemprop="image" content="/images/myavatar.jpg">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="晋西北程序员">
-      </span>
+  <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+      
+      <a href="/2018/07/19/life-in-here/" rel="next" title="life in here"><i class="fas fa-angle-left"></i><span class="nav-title">life in here</span></a>
+      
     </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/2018/07/19/hello-world/" itemprop="url">Hello World</a>
-      </h1>
-      <div class="post-meta">
-        
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-07-19T16:40:30-04:00">2018-07-19 16:40:30</time></span>
-        </span>
-        
-        
-        
-      </div>
-    </header>
-    <main class="post-main" itemprop="articleBody">
+    <div class="post-nav-prev post-nav-item">
       
-      <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </main>
-    <footer class="post-footer">
-      
-    </footer>
-  </article>
-  
-  <article class="index-article card animate" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/19/今天吃什么/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="Tim">
-        <meta itemprop="description" content="">
-        <meta itemprop="image" content="/images/myavatar.jpg">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="晋西北程序员">
-      </span>
     </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="/2018/07/19/今天吃什么/" itemprop="url">今天吃什么</a>
-      </h1>
-      <div class="post-meta">
-        
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-07-19T15:56:19-04:00">2018-07-19 15:56:19</time></span>
-        </span>
-        
-        
-        
-        <span class="post-meta-divider divider">|</span>
-        
-        <span class="post-categories">
-          
-          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/京酱肉丝/" itemprop="url" rel="index"><span itemprop="name">京酱肉丝</span></a></span>
-        </span>
-        
-        
-      </div>
-    </header>
-    <main class="post-main" itemprop="articleBody">
-      
-      <p>hexo generate<br>hexo deploy</p>
-
-      
-    </main>
-    <footer class="post-footer">
-      
-      <div class="post-tags">
-        
-        
-        
-        
-        <a class="post-tag button" href="/tags/吃的/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>吃的</a>
-        
-        <a class="post-tag button" href="/tags/喝的/" style="background: #a3bb54;" rel="tag"><i class="fas fa-tags"></i>喝的</a>
-        
-      </div>
-      
-    </footer>
-  </article>
-  
+  </div>
   
   
 </div>
@@ -397,6 +249,20 @@
 
 
   <div class="sidebar-sticky">
+    
+    
+
+
+
+
+<hr>
+<div class="post-toc sidebar-item" id="toc-div">
+  <div><i class="fas fa-list-ol"></i>文章目录</div>
+  <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#设置一个值为auto-increment"><span class="toc-text">设置一个值为auto-increment</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#取消auto-increment"><span class="toc-text">取消auto-increment</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#添加pk"><span class="toc-text">添加pk</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#删除pk"><span class="toc-text">删除pk</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#添加fk"><span class="toc-text">添加fk</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#删除fk"><span class="toc-text">删除fk</span></a></li></ol></div>
+</div>
+
+
+
     
     
     

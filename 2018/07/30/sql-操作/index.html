@@ -140,7 +140,7 @@
       <div class="post-meta">
         
         <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-07-30T11:45:39-04:00">2018-07-30 11:45:39</time></span>
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-07-30T10:45:39-05:00">2018-07-30 11:45:39</time></span>
         </span>
         
         
@@ -156,13 +156,13 @@
       </div>
     </header>
     <main class="post-main" itemprop="articleBody">
-      <h2 id="设置一个值为auto-increment"><a href="#设置一个值为auto-increment" class="headerlink" title="设置一个值为auto-increment"></a>设置一个值为auto-increment</h2><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">change</span> <span class="hljs-keyword">id</span> <span class="hljs-keyword">id</span> <span class="hljs-built_in">int</span> primary <span class="hljs-keyword">key</span> auto_increment;<br></code></pre></td></tr></table></figure>
+      <h3 id="设置一个值为auto-increment"><a href="#设置一个值为auto-increment" class="headerlink" title="设置一个值为auto-increment"></a>设置一个值为auto-increment</h3><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">change</span> <span class="hljs-keyword">id</span> <span class="hljs-keyword">id</span> <span class="hljs-built_in">int</span> primary <span class="hljs-keyword">key</span> auto_increment;<br></code></pre></td></tr></table></figure>
 <p>如果id已经是主键了，不写primary key。</p>
-<h2 id="取消auto-increment"><a href="#取消auto-increment" class="headerlink" title="取消auto-increment"></a>取消auto-increment</h2><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">change</span> <span class="hljs-keyword">id</span> <span class="hljs-keyword">id</span> <span class="hljs-built_in">int</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span><br></code></pre></td></tr></table></figure>
-<h2 id="添加pk"><a href="#添加pk" class="headerlink" title="添加pk"></a>添加pk</h2><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">add</span> primary <span class="hljs-keyword">key</span>(<span class="hljs-string">`id`</span>)<br></code></pre></td></tr></table></figure>
-<h2 id="删除pk"><a href="#删除pk" class="headerlink" title="删除pk"></a>删除pk</h2><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">drop</span> primary <span class="hljs-keyword">key</span><br></code></pre></td></tr></table></figure>
-<h2 id="添加fk"><a href="#添加fk" class="headerlink" title="添加fk"></a>添加fk</h2><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">add</span> <span class="hljs-keyword">constraint</span> fk_name foreign <span class="hljs-keyword">key</span>(___) <span class="hljs-keyword">references</span> tbl2(<span class="hljs-keyword">id</span>)<br></code></pre></td></tr></table></figure>
-<h2 id="删除fk"><a href="#删除fk" class="headerlink" title="删除fk"></a>删除fk</h2><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">drop</span> foreign <span class="hljs-keyword">key</span> fk_name<br></code></pre></td></tr></table></figure>
+<h3 id="取消auto-increment"><a href="#取消auto-increment" class="headerlink" title="取消auto-increment"></a>取消auto-increment</h3><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">change</span> <span class="hljs-keyword">id</span> <span class="hljs-keyword">id</span> <span class="hljs-built_in">int</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span><br></code></pre></td></tr></table></figure>
+<h3 id="添加pk"><a href="#添加pk" class="headerlink" title="添加pk"></a>添加pk</h3><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">add</span> primary <span class="hljs-keyword">key</span>(<span class="hljs-string">`id`</span>)<br></code></pre></td></tr></table></figure>
+<h3 id="删除pk"><a href="#删除pk" class="headerlink" title="删除pk"></a>删除pk</h3><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">drop</span> primary <span class="hljs-keyword">key</span><br></code></pre></td></tr></table></figure>
+<h3 id="添加fk"><a href="#添加fk" class="headerlink" title="添加fk"></a>添加fk</h3><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">add</span> <span class="hljs-keyword">constraint</span> fk_name foreign <span class="hljs-keyword">key</span>(___) <span class="hljs-keyword">references</span> tbl2(<span class="hljs-keyword">id</span>)<br></code></pre></td></tr></table></figure>
+<h3 id="删除fk"><a href="#删除fk" class="headerlink" title="删除fk"></a>删除fk</h3><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">drop</span> foreign <span class="hljs-keyword">key</span> fk_name<br></code></pre></td></tr></table></figure>
 
     </main>
     <footer class="post-footer">
@@ -183,10 +183,10 @@
   <div class="post-nav">
     <div class="post-nav-next post-nav-item">
       
-      <a href="/2018/07/19/life-in-here/" rel="next" title="life in here"><i class="fas fa-angle-left"></i><span class="nav-title">life in here</span></a>
-      
     </div>
     <div class="post-nav-prev post-nav-item">
+      
+      <a href="/2018/07/30/hello-world/" rel="prev" title="Hello World"><span class="nav-title">Hello World</span><i class="fas fa-angle-right"></i></a>
       
     </div>
   </div>
@@ -218,7 +218,7 @@
     
     <div class="archives-count">
       <div class="site-count-title">归档</div>
-      <div><a href="/archives/">4</a></div>
+      <div><a href="/archives/">2</a></div>
     </div>
     
     
@@ -227,7 +227,7 @@
     
     <div class="categories-count">
       <div class="site-count-title">分类</div>
-      <div><a href="/categories/">3</a></div>
+      <div><a href="/categories/">1</a></div>
     </div>
     
     
@@ -236,7 +236,7 @@
     
     <div class="tags-count">
       <div class="site-count-title">标签</div>
-      <div><a href="/tags/">5</a></div>
+      <div><a href="/tags/">1</a></div>
     </div>
     
   </div>
@@ -258,7 +258,7 @@
 <hr>
 <div class="post-toc sidebar-item" id="toc-div">
   <div><i class="fas fa-list-ol"></i>文章目录</div>
-  <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#设置一个值为auto-increment"><span class="toc-text">设置一个值为auto-increment</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#取消auto-increment"><span class="toc-text">取消auto-increment</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#添加pk"><span class="toc-text">添加pk</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#删除pk"><span class="toc-text">删除pk</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#添加fk"><span class="toc-text">添加fk</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#删除fk"><span class="toc-text">删除fk</span></a></li></ol></div>
+  <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#设置一个值为auto-increment"><span class="toc-text">设置一个值为auto-increment</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#取消auto-increment"><span class="toc-text">取消auto-increment</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#添加pk"><span class="toc-text">添加pk</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#删除pk"><span class="toc-text">删除pk</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#添加fk"><span class="toc-text">添加fk</span></a></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#删除fk"><span class="toc-text">删除fk</span></a></li></ol></div>
 </div>
 
 

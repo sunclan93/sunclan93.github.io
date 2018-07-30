@@ -3,10 +3,19 @@
   
     
     <entry>
+      <title>Hello World</title>
+      <link href="/2018/07/30/hello-world/"/>
+      <url>/2018/07/30/hello-world/</url>
+      <content type="html"><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
       <title>sql 操作</title>
       <link href="/2018/07/30/sql-%E6%93%8D%E4%BD%9C/"/>
       <url>/2018/07/30/sql-%E6%93%8D%E4%BD%9C/</url>
-      <content type="html"><![CDATA[<h2 id="设置一个值为auto-increment"><a href="#设置一个值为auto-increment" class="headerlink" title="设置一个值为auto-increment"></a>设置一个值为auto-increment</h2><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">change</span> <span class="hljs-keyword">id</span> <span class="hljs-keyword">id</span> <span class="hljs-built_in">int</span> primary <span class="hljs-keyword">key</span> auto_increment;<br></code></pre></td></tr></table></figure><p>如果id已经是主键了，不写primary key。</p><h2 id="取消auto-increment"><a href="#取消auto-increment" class="headerlink" title="取消auto-increment"></a>取消auto-increment</h2><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">change</span> <span class="hljs-keyword">id</span> <span class="hljs-keyword">id</span> <span class="hljs-built_in">int</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span><br></code></pre></td></tr></table></figure><h2 id="添加pk"><a href="#添加pk" class="headerlink" title="添加pk"></a>添加pk</h2><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">add</span> primary <span class="hljs-keyword">key</span>(<span class="hljs-string">`id`</span>)<br></code></pre></td></tr></table></figure><h2 id="删除pk"><a href="#删除pk" class="headerlink" title="删除pk"></a>删除pk</h2><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">drop</span> primary <span class="hljs-keyword">key</span><br></code></pre></td></tr></table></figure><h2 id="添加fk"><a href="#添加fk" class="headerlink" title="添加fk"></a>添加fk</h2><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">add</span> <span class="hljs-keyword">constraint</span> fk_name foreign <span class="hljs-keyword">key</span>(___) <span class="hljs-keyword">references</span> tbl2(<span class="hljs-keyword">id</span>)<br></code></pre></td></tr></table></figure><h2 id="删除fk"><a href="#删除fk" class="headerlink" title="删除fk"></a>删除fk</h2><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">drop</span> foreign <span class="hljs-keyword">key</span> fk_name<br></code></pre></td></tr></table></figure>]]></content>
+      <content type="html"><![CDATA[<h3 id="设置一个值为auto-increment"><a href="#设置一个值为auto-increment" class="headerlink" title="设置一个值为auto-increment"></a>设置一个值为auto-increment</h3><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">change</span> <span class="hljs-keyword">id</span> <span class="hljs-keyword">id</span> <span class="hljs-built_in">int</span> primary <span class="hljs-keyword">key</span> auto_increment;<br></code></pre></td></tr></table></figure><p>如果id已经是主键了，不写primary key。</p><h3 id="取消auto-increment"><a href="#取消auto-increment" class="headerlink" title="取消auto-increment"></a>取消auto-increment</h3><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">change</span> <span class="hljs-keyword">id</span> <span class="hljs-keyword">id</span> <span class="hljs-built_in">int</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">null</span><br></code></pre></td></tr></table></figure><h3 id="添加pk"><a href="#添加pk" class="headerlink" title="添加pk"></a>添加pk</h3><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">add</span> primary <span class="hljs-keyword">key</span>(<span class="hljs-string">`id`</span>)<br></code></pre></td></tr></table></figure><h3 id="删除pk"><a href="#删除pk" class="headerlink" title="删除pk"></a>删除pk</h3><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">drop</span> primary <span class="hljs-keyword">key</span><br></code></pre></td></tr></table></figure><h3 id="添加fk"><a href="#添加fk" class="headerlink" title="添加fk"></a>添加fk</h3><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">add</span> <span class="hljs-keyword">constraint</span> fk_name foreign <span class="hljs-keyword">key</span>(___) <span class="hljs-keyword">references</span> tbl2(<span class="hljs-keyword">id</span>)<br></code></pre></td></tr></table></figure><h3 id="删除fk"><a href="#删除fk" class="headerlink" title="删除fk"></a>删除fk</h3><figure class="hljs highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">alter</span> <span class="hljs-keyword">table</span> tbl1 <span class="hljs-keyword">drop</span> foreign <span class="hljs-keyword">key</span> fk_name<br></code></pre></td></tr></table></figure>]]></content>
       
       <categories>
           
@@ -23,63 +32,15 @@
       
     </entry>
     
-    <entry>
-      <title>life in here</title>
-      <link href="/2018/07/19/life-in-here/"/>
-      <url>/2018/07/19/life-in-here/</url>
-      <content type="html"><![CDATA[<p><img src="/images/konachi.jpg" alt="我是图片"></p>]]></content>
-      
-      <categories>
-          
-          <category> life </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> life </tag>
-            
-            <tag> American Life </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2018/07/19/hello-world/"/>
-      <url>/2018/07/19/hello-world/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-      
-      
-    </entry>
-    
-    <entry>
-      <title>今天吃什么</title>
-      <link href="/2018/07/19/%E4%BB%8A%E5%A4%A9%E5%90%83%E4%BB%80%E4%B9%88/"/>
-      <url>/2018/07/19/%E4%BB%8A%E5%A4%A9%E5%90%83%E4%BB%80%E4%B9%88/</url>
-      <content type="html"><![CDATA[<p>hexo generate<br>hexo deploy</p>]]></content>
-      
-      <categories>
-          
-          <category> 京酱肉丝 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 吃的 </tag>
-            
-            <tag> 喝的 </tag>
-            
-        </tags>
-      
-    </entry>
-    
   
   
+    
+    <entry>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<p>大家好，我是绅士</p>]]></content>
+    </entry>
     
     <entry>
       <title>categories</title>
@@ -93,13 +54,6 @@
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
       <content type="html"><![CDATA[]]></content>
-    </entry>
-    
-    <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<p>大家好，我是绅士</p>]]></content>
     </entry>
     
   

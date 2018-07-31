@@ -3,6 +3,29 @@
   
     
     <entry>
+      <title>Octave Tutorial</title>
+      <link href="/2018/07/30/Octave-Tutorial/"/>
+      <url>/2018/07/30/Octave-Tutorial/</url>
+      <content type="html"><![CDATA[<h2 id="basic-operation"><a href="#basic-operation" class="headerlink" title="basic operation"></a>basic operation</h2><h3 id="基本的加减乘除"><a href="#基本的加减乘除" class="headerlink" title="基本的加减乘除"></a>基本的加减乘除</h3><h3 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h3><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs Octave">1 == 2  % false<br>1 ~= 2  <br>1 &amp;&amp; 0<br>1 || 0<br>xor(1,0)<br></code></pre></td></tr></table></figure><h3 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h3><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs Octave">a = 3<br>a = 3;<br>disp(sprintf(&apos;2 decimal: %0.2f&apos;,a))<br></code></pre></td></tr></table></figure><h3 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h3><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs Octave">A = [1 2; 3 4; 5 6] % 分号是换行<br>v = 1:0.1:2 % 从1开始，步长0.1到2的行向量<br><br>ones(2,3) % 2x3全是1<br>w = zeros(1,3) % [0,0,0]<br>w = rand(1,3)<br>w = randn(1,3) % 平均值为0的高斯分布的方差<br>eye(4) % 4x4的单位矩阵<br></code></pre></td></tr></table></figure><h3 id="矩阵切片儿操作"><a href="#矩阵切片儿操作" class="headerlink" title="矩阵切片儿操作"></a>矩阵切片儿操作</h3><figure class="hljs highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs Octave">A = [1 2; 3 4; 5 6]<br>size(A) % 也是个矩阵<br>size(A,1) % 返回行数<br>size(A,2) % 返回列数<br>length(A) % 最大维度（用于向量）<br><br><br>A(3,2) % 引用a&lt;sub&gt;32&lt;/sub&gt;的值<br></code></pre></td></tr></table></figure><p>a<sub>32</sub></p>]]></content>
+      
+      <categories>
+          
+          <category> cookbook </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Octave </tag>
+            
+            <tag> Machine Learning </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2018/07/30/hello-world/"/>
       <url>/2018/07/30/hello-world/</url>
@@ -36,13 +59,6 @@
   
     
     <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<p>大家好，我是绅士</p>]]></content>
-    </entry>
-    
-    <entry>
       <title>categories</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
@@ -54,6 +70,13 @@
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
       <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+    <entry>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<p>大家好，我是绅士</p>]]></content>
     </entry>
     
   
